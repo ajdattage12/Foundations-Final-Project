@@ -18,7 +18,6 @@ app.get("/api/random_recipe", (req, res) => {
   res.status(200).send(randomCookie);
 });
 
-
 let savedSuggestion = [];
 
 app.get(
@@ -30,11 +29,11 @@ app.get(
 
 app.post(
   "/api/suggestion",
-  (createSuggestion = (req, res) => {
+  createSuggestion = (req, res) => {
     let { suggestion } = req.body;
     savedSuggestion = savedSuggestion.concat(suggestion);
     res.status(200).send();
-  })
+  }
 );
 
   app.delete(
@@ -47,30 +46,23 @@ app.post(
         res.status(200).send();
     });
 let allRating = {
-    // 'sugarCookie': [5],
-    // 'oatmealCookie': [4],
-    // 'chocolateChip': []
 };
 
-app.post('/api/rate', () => {
-    //TODO: get recipe from request
-    //TODO: validate rating input
-    //TODO: add record to database with rating
-    /*
+app.post(
+  '/api/rate',
+    getRating = (req, res) => {
+      let {rating} = req.body;
+      savedRating = savedRating.concat(rating);
         if(!allRating[recipeName]){
             allRating[recipeName] = [];
         }
         allRating[recipeName].push(newRating)
-        res.send(201);
-    */
-})
+        res.send(200).send();
 
 app.get('/api/rating', () => {
-    //TODO: get recipe from request
-    //TODO: load all ratings from database for recipe
-    //TODO: calculate average
-    //TODO: on front end choose display method
-})
+  getRating = (req, res) => {
+    res.status(200).send(savedRating);
+  }
+});
 
 app.listen(4000, () => console.log("Server running on 4000"));
-
