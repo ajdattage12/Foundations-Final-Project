@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ariell Dattage">
+    <link rel="stylesheet" href="styles.css"> 
+    <link href='https://fonts.googleapis.com/css?family=Bubbler One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+    <title>One Smart Cookie</title>
+</head>
+<body>
+<h1>Let's Bake Something!</h1>
+    <h2>Select a cookie to get started.</h2>
+    <br>
+        <div>
+            <button class= 'cookie-img' id ='cookie_button'>
+                <img class= 'image' id = 'chocolate_chip' src= images/chocolate_chip.jpg>
+                </button> 
+
+            <button class= 'cookie-img' id ='cookie_button'>
+                <img class= 'image' id = 'chocolate_chunk' src= images/chocolate_chunk.jpg>
+                </button>
+            <button class= 'cookie-img' id ='cookie_button'>
+                <img class= 'image' id ='white_chip' src= images/white_chip.jpg>
+                </button>
+            <button class= 'cookie-img' id ='cookie_button'>
+                <img class= 'image' id ='smores' src= images/smores.jpg> 
+                </button>
+        </div>
+        <br></br>
+    <h3> Can't decide what to bake?</h3>
+    <button class= 'random-recipe' id ='random_recipe'> Random Cookie Suggestion</button>
+        <br></br>
+
+    
+    <h4>Need more variety in your life? <br> Suggest new cookie flavors to be featured.</h4>
+    <form>
+        <label for= "suggestion"></label>
+        <input type = "text" placeholder= "New Cookie Flavor" >
+        <button class = 'flavor-suggestion' id = "submitSuggestionButton">Submit Suggestion</button>
+        </input>
+        <div id= "suggestion-display"></div>
+        <br>
+        <label for="suggestion-delete">Need to delete a suggestion?</label>
+        <br>
+        <select id="suggestion-delete"> </select>
+        <button class= 'flavor-suggestion' id="deleteSuggestionButton">Delete Suggestion</button>
+    </form>
+
+    <script src= index.js></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body>
+</html>

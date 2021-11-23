@@ -1,0 +1,137 @@
+div {
+  align-content: center;
+  justify-content: center;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+body {
+  background: linear-gradient(to bottom, white, rgb(189, 183, 183));
+  margin: 1rem;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 5em;
+  font-family: "Mountains of Christmas";
+  text-shadow: 2px 5px 5px rgb(160, 167, 168);
+  margin-bottom: 20px;
+}
+h2 {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-family: "Bubbler One";
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+h3 {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-family: "Bubbler One";
+  text-shadow: 2px 5px 5px rgb(160, 167, 168);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+h4 {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align-last: center;
+  font-size: 1.5em;
+  font-family: "Bubbler One";
+  text-shadow: 2px 5px 5px rgb(160, 167, 168);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+button {
+  background-color: none;
+  color: none;
+  border: none;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.image {
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  display: inline-block;
+  max-width: 250px;
+  max-height: 250px;
+  margin: 15px; /*the white border around the cookie image */
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.24),
+    0 10px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.random-recipe {
+  align-content: center;
+  justify-content: center;
+  display: inline-flex;
+  font-size: 2em;
+  font-family: "Mountains of Christmas";
+  text-shadow: 2px 5px 5px rgb(160, 167, 168);
+  padding: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* margin-right: 500px; */
+  margin-left: 535px;
+  border-radius: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.flavor_suggestion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align-last: center;
+  font-size: 2em;
+  font-family: "Bubbler One";
+}
+.suggestionDeleteButton {
+  align-content: center;
+  justify-content: center;
+  display: inline-flex;
+  font-size: 2em;
+  font-family: "Bubbler One";
+}
+.submitSuggestionButton {
+  align-content: center;
+  justify-content: center;
+  display: inline-flex;
+  font-size: 2em;
+  font-family: "Bubbler One";
+}
+form {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2 em;
+  font-family: "Bubbler One";
+  text-shadow: 2px 5px 5px rgb(160, 167, 168);
+  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
