@@ -14,7 +14,7 @@
 <h1>Let's Bake Something!</h1>
     <h2>Select a cookie to get started.</h2>
     <br>
-        <div>
+        <div class="home-container">
             <button class= 'cookie-img' id ='cookie_button'>
                 <img class= 'image' id = 'chocolate_chip' src= images/chocolate_chip.jpg>
                 </button> 
@@ -36,21 +36,21 @@
 
     
     <h4>Need more variety in your life? <br> Suggest new cookie flavors to be featured.</h4>
-    <form>
+    <form id="suggestion-form">
         <label for= "suggestion"></label>
-        <input type = "text" placeholder= "New Cookie Flavor" >
-        <button class = 'flavor-suggestion' id = "submitSuggestionButton">Submit Suggestion</button>
+        <input id="suggestion" type = "text" placeholder= "New Cookie Flavor" >
+        <button class = 'flavor-suggestion' id="submitSuggestionButton">Submit Suggestion</button>
         </input>
         <div id= "suggestion-display"></div>
         <br>
-        <label for="suggestion-delete">Need to delete a suggestion?</label>
+        <label class= "suggestion-label" for="suggestion-delete">Need to delete a suggestion?</label>
         <br>
         <select id="suggestion-delete"> </select>
         <button class= 'flavor-suggestion' id="deleteSuggestionButton">Delete Suggestion</button>
     </form>
 
-    <script src= index.js></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src= index.js></script>
 
 </body>
 </html>

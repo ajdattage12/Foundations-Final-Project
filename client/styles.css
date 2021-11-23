@@ -1,4 +1,4 @@
-div {
+.home-container {
   align-content: center;
   justify-content: center;
   justify-content: space-between;
@@ -11,6 +11,8 @@ div {
 body {
   background: linear-gradient(to bottom, white, rgb(189, 183, 183));
   margin: 1rem;
+  height: 100vh;
+  background-attachment: fixed;
 }
 h1 {
   display: flex;
@@ -134,4 +136,29 @@ form {
   margin-bottom: 10px;
   margin-right: 20px;
   margin-left: 20px;
+}
+.styled-list{
+  color: black;
+  font-size: 1.5em;
+  font-family: "Bubbler One";
+  text-shadow: 2px 5px 5px rgb(160, 167, 168);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.recipe-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.column-list{
+  display: flex;
+  flex-direction: column;
+}
+
+a{
+  font-size: 1.5em;
+  font-family: "Bubbler One";
+  color: black;
 }
