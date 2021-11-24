@@ -20,15 +20,13 @@ app.get("/api/random_recipe", (req, res) => {
 
 let savedSuggestion = [];
 
-app.get(
-  "/api/suggestion",
+app.get( "/api/suggestion",
   (getSuggestion = (req, res) => {
     res.status(200).send(savedSuggestion);
   })
 );
 
-app.post(
-  "/api/suggestion",
+app.post( "/api/suggestion",
   createSuggestion = (req, res) => {
     let { suggestion } = req.body;
     savedSuggestion = savedSuggestion.concat(suggestion);
@@ -36,8 +34,7 @@ app.post(
   }
 );
 
-  app.delete(
-    "/api/suggestion",
+  app.delete( "/api/suggestion",
     deleteSuggestion = (req, res) => {
       let {suggestion} = req.query;
       console.log(suggestion)
@@ -48,21 +45,4 @@ app.post(
 let allRating = {
 };
 
-app.post(
-  '/api/rate',
-    getRating = (req, res) => {
-      let {rating} = req.body;
-      savedRating = savedRating.concat(rating);
-        if(!allRating[recipeName]){
-            allRating[recipeName] = [];
-        }
-        allRating[recipeName].push(newRating)
-        res.send(200).send();
-
-app.get('/api/rating', () => {
-  getRating = (req, res) => {
-    res.status(200).send(savedRating);
-  }
-});
-
-app.listen(4000, () => console.log("Server running on 4000"));
+app.listen(4000, () => console.log("Server running on 4000"))
