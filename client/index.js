@@ -1,5 +1,3 @@
-
-
 const chocolateChip = document.querySelector("#chocolate_chip");
 const chocolateChunk = document.querySelector("#chocolate_chunk");
 const whiteChip = document.querySelector("#white_chip");
